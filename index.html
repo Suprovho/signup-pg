@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro component with sign up form</title>
+    <link rel="icon" href="/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="page-container">
+    <div class="header">
+        <h1>Learn to code by 
+            watching others</h1>
+
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+                but understanding how developers think is invaluable.</p>
+    </div>
+
+    <div class="forms-conatiner">
+      <button class="btn"><span><strong>Try it free 7 days</strong> then $20/month</span>
+      </button>
+        <!--add divs to error messages, here or in js-->
+      <div class="error"></div>
+      <form id="form" novalidate> <!-- novalidate attribute is a boolean attribute. When present, it specifies that the form-data (input) should not be validated when submitted.-->
+      <input id="firstname" name="name" type="text" placeholder="First name" title="Input your first name" required >
+      <div class="form-error"><em>First name cannot be empty</em></div>
+      <input id="lastname" name="lastname" type="text" placeholder="Last name" title="Input your last name" required >
+      <div class="form-error"><em>last name cannot be empty</em></div>
+      <input id="email" name="email" type="email" placeholder="Email Address" title="Input your Email" required >
+      <div class="form-error"><em>looks like this cannot be empty</em></div>
+      <input id="password" name="password" type="password" placeholder="Password" title="Input any password" required>
+      <div class="form-error"><em>Password cannot be empty</em></div>
+      <input id="formsubmit" class="btn-sub" name="submit" type="submit" value="Claim your free trial">
+      <p>By clicking the button , you are agreeing to our <a href="">Terms and Services</a></p>
+    </form>
+    </div>
+</div>
+    <script src="/script.js"></script>
+</body>
+</html>
